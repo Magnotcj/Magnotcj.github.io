@@ -13,7 +13,10 @@ p{
 
 nav{
     grid-area: nav;
-    background-color: red;
+    background-color: darkgrey;
+    border: 0.2rem solid black;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 header #name{
@@ -35,6 +38,22 @@ main > h1{
 
 nav > ul{
     list-style-type: none;
+    font-family: fantasy;
+    font-size: large;
+    padding: 0;
+}
+
+main > ul {
+    padding-left: 1rem;
+}
+
+#resumeTitle{
+    padding-left: 1rem;
+    
+}
+
+a{
+    text-decoration:none;
 }
 
 body{
@@ -49,11 +68,14 @@ body{
                              "main main";
         height: 100vh;
         grid-template-columns: 4fr 1fr;
-        grid-template-rows:  0.5fr 1fr 4fr;
+        grid-template-rows:  0.3fr 0.5fr 4fr;
     }
     nav > ul > li{
         display: inline-block;
         padding-right: 4rem;
+    }
+    nav > ul{
+        padding-left: 2rem;
     }
 }
 
@@ -68,9 +90,9 @@ body{
         grid-template-rows: 1fr 10fr;
     }
 
-    body #portfolio{
+    #portfolio{
         display: grid;
-        grid-template-areas: "nav nav"
+        grid-template-areas: "nav head"
                              "nav main";
                              
         height: 100vh;
@@ -81,6 +103,15 @@ body{
     nav > ul > li{
         display:list-item;
         margin-top: 10rem;
+        
+    }
+    nav > ul {
+        padding-top:3rem;
+        padding-left: 1.6rem;
+    }
+
+    #name{
+        padding-left: 1rem;
     }
 }
 
