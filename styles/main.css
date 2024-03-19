@@ -48,18 +48,29 @@ body{
                              "head head"
                              "main main";
         height: 100vh;
-        grid-template-columns: auto auto;
-        grid-template-rows:  auto auto auto;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows:  0.5fr 1fr 4fr;
     }
     nav > ul > li{
         display: inline-block;
+        padding-right: 4rem;
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     body{
         display: grid;
         grid-template-areas: "nav head"
+                             "nav main";
+                             
+        height: 100vh;
+        grid-template-columns: 8em 1fr;
+        grid-template-rows: 1fr 10fr;
+    }
+
+    body #portfolio{
+        display: grid;
+        grid-template-areas: "nav nav"
                              "nav main";
                              
         height: 100vh;
