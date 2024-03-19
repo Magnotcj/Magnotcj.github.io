@@ -1,10 +1,7 @@
 :root{
-    --light-color:#34EB92;
-    --dark-color:#342599;
+    --dark-color:#33266e;
     --nav-color:#EBD234;
 }
-
-
 
 #avatar{
     height: 20rem;
@@ -20,6 +17,7 @@
 p{
     max-width: 50rem;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
 }
 
 nav{
@@ -32,6 +30,7 @@ nav{
 
 li{
     font-family:Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
 }
 
 header #name{
@@ -55,20 +54,16 @@ a:link {
     color: var(--nav-color);
   }
   
-  /* visited link */
-  a:visited {
+a:visited {
     color: var(--nav-color);
-  }
+}
   
-  /* mouse over link */
-  a:hover {
+a:hover {
     color: var(--nav-color);
-  }
-  
-  /* selected link */
-  a:active {
+}
+a:active {
     color: var(--nav-color);
-  }
+}
 
 nav > ul {
     list-style: none;
@@ -98,17 +93,21 @@ body{
 
 h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark-color);
 }
 
 h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark-color);
 }
 
 h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark-color);
 }
 h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark-color);
 }
 
 
@@ -149,7 +148,7 @@ h4{
 
     #portfolio{
         display: grid;
-        grid-template-areas: "nav head"
+        grid-template-areas: "nav main"
                              "nav main";
                              
         height: 100vh;
