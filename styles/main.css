@@ -1,3 +1,11 @@
+:root{
+    --light-color:#34EB92;
+    --dark-color:#342599;
+    --nav-color:#EBD234;
+}
+
+
+
 #avatar{
     height: 20rem;
     border-radius: 25%;
@@ -17,9 +25,9 @@ p{
 nav{
     grid-area: nav;
     background-color: darkgrey;
-    border-right: 0.2rem solid black;
     padding-left: 0;
     margin-left: 0;
+    background-image: linear-gradient(0deg, rgb(61, 103, 216),rgb(65, 80, 170),rgb(53, 69, 115));
 }
 
 li{
@@ -43,11 +51,27 @@ main > h1{
     margin-top: 0rem;
 }
 
-nav > ul{
-    list-style-type: none;
-    font-family: fantasy;
-    font-size: large;
-    padding: 0;
+a:link {
+    color: var(--nav-color);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--nav-color);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--nav-color);
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--nav-color);
+  }
+
+nav > ul {
+    list-style: none;
 }
 
 main > ul {
@@ -65,6 +89,11 @@ a{
 
 body{
     background-color: gray;
+    background-image: radial-gradient(circle at 77% 43%, rgba(168, 168, 168,0.04) 0%, rgba(168, 168, 168,0.04) 50%,rgba(10, 10, 10,0.04) 50%,
+     rgba(10, 10, 10,0.04) 100%),radial-gradient(circle at 33% 65%, rgba(248, 248, 248,0.04) 0%, rgba(248, 248, 248,0.04) 50%,
+     rgba(228, 228, 228,0.04) 50%, rgba(228, 228, 228,0.04) 100%),radial-gradient(circle at 92% 79%, rgba(152, 152, 152,0.04) 0%,
+      rgba(152, 152, 152,0.04) 50%,rgba(28, 28, 28,0.04) 50%, rgba(28, 28, 28,0.04) 100%),radial-gradient(circle at 91% 13%, rgba(41, 41, 41,0.04) 0%, 
+      rgba(41, 41, 41,0.04) 50%,rgba(214, 214, 214,0.04) 50%, rgba(214, 214, 214,0.04) 100%),linear-gradient(90deg, rgb(11, 127, 96),rgb(139, 205, 191));
 }
 
 h1{
@@ -95,10 +124,15 @@ h4{
     }
     nav > ul > li{
         display: inline-block;
-        padding-right: 3rem;
+        padding-right: 2rem;
+        font-size: x-large;
     }
     nav > ul{
         padding-left: 2rem;
+    }
+
+    nav{
+        border-bottom: 0.2rem solid black;
     }
 }
 
@@ -130,7 +164,7 @@ h4{
     }
     nav > ul {
         padding-top:3rem;
-        padding-left: 1.6rem;
+        padding-left: 1.2rem;
     }
 
     #name{
@@ -140,10 +174,23 @@ h4{
    p{
         line-height: 2rem;
     }
+
+    nav{
+        border-right: 0.2rem solid black;
+    }
 }
 
 .wrap{
     float:left;
     padding-right: 2rem;
     word-wrap:break-word;
+}
+
+
+ #portfolio > main > ul {
+    list-style-type: none;
+}
+
+li > img{
+    border: 0.2rem solid black;
 }
