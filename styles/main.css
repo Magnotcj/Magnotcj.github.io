@@ -1,6 +1,8 @@
 #avatar{
     height: 20rem;
     border-radius: 25%;
+    border-color: black;
+    border-style: solid;
 }
 
 .projectImage{
@@ -9,14 +11,19 @@
 
 p{
     max-width: 50rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
     grid-area: nav;
     background-color: darkgrey;
-    border: 0.2rem solid black;
+    border-right: 0.2rem solid black;
     padding-left: 0;
     margin-left: 0;
+}
+
+li{
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 header #name{
@@ -60,6 +67,22 @@ body{
     background-color: gray;
 }
 
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
 @media screen and (min-width: 300px){
     body {
         display: grid;
@@ -72,7 +95,7 @@ body{
     }
     nav > ul > li{
         display: inline-block;
-        padding-right: 4rem;
+        padding-right: 3rem;
     }
     nav > ul{
         padding-left: 2rem;
@@ -113,5 +136,14 @@ body{
     #name{
         padding-left: 1rem;
     }
+
+   p{
+        line-height: 2rem;
+    }
 }
 
+.wrap{
+    float:left;
+    padding-right: 2rem;
+    word-wrap:break-word;
+}
